@@ -83,7 +83,7 @@ pt-6 {
   width: 100%;
   z-index: 999;
   transition: all 0.2s;
-  top: 35px;
+  top: 50px;
 }
 
 .header.fixed-header {
@@ -206,7 +206,7 @@ pt-6 {
 .slider .slide {
   background-repeat: no-repeat;
   background-position: right top;
-  height: 100vh;
+  height: 115vh;
 }
 
 .slider .owl-nav {
@@ -342,6 +342,7 @@ pt-6 {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 400px;
 }
 
 .discount .number-discount {
@@ -384,6 +385,11 @@ pt-6 {
   position: absolute;
   bottom: -44px;
   z-index: -1;
+}
+
+.discount .discount-info {
+  position: relative;
+  top: 123px
 }
 
 .discount h3 {
