@@ -1,5 +1,8 @@
 $(function () {
 
+  setTimeout(function() {
+    $(".loading").fadeOut()
+  }, 3000)
   // Fixed Header
   $(window).scroll(function() {
     if($(this).scrollTop() > 30 ) {
@@ -7,7 +10,19 @@ $(function () {
     } else {
       $('.header').removeClass('fixed-header');
     }
+
+    if($(this).scrollTop() > 300 ) {
+      $('.btn-to-top').fadeIn();
+    } else {
+      $('.btn-to-top').fadeOut();
+    }
   });
+
+  $(".btn-to-top").click(function() {
+    $("html, body").animate({
+      scrollTop: 0
+    }, 2000)
+  })
 
   $(".show-menu").click(function () {
     $(".header .top-menu").addClass("show");
