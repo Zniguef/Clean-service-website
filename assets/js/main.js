@@ -2,7 +2,7 @@ $(function () {
 
   setTimeout(function() {
     $(".loading").fadeOut()
-  }, 3000)
+  }, 1000)
   // Fixed Header
   $(window).scroll(function() {
     if($(this).scrollTop() > 30 ) {
